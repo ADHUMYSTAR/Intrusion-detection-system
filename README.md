@@ -41,10 +41,6 @@ Both modules run *separately* but complement each other, providing *real-time mo
 
 ## 🖥 Dashboards & Visualizations  
 
-<p align="center">
-  <img src="https://media.giphy.com/media/XG1oC6F9SZQk8V6lE4/giphy.gif" width="600" alt="IDS Dashboard Animation"/>
-</p>
-
 🔴 *Signature-based Intrusion Detection Logs* 
 <img width="1558" height="883" alt="image" src="https://github.com/user-attachments/assets/21d0c454-5b94-44d8-ba36-eb6cc524d417" />
 
