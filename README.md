@@ -7,9 +7,7 @@ Hybrid IDS using Signature-based + Anomaly-based Detection (Random Forest Classi
 This project implements a hybrid Intrusion Detection System (IDS) with two components:
 
 Signature-based detection → Identifies known attacks using rule-based matching.
-
 Anomaly-based detection (Random Forest Classifier) → Detects unknown threats with 99.87% accuracy.
-
 Both modules run separately and provide real-time monitoring dashboards.
 
 ⚙️ Features
@@ -20,21 +18,6 @@ Both modules run separately and provide real-time monitoring dashboards.
 ✔️ Anomaly vs Normal traffic statistics
 ✔️ Easy-to-run modular design
 
-📂 Project Structure
-├── anomaly/              # ML-based anomaly detection module
-│   ├── train_model.py    # Train Random Forest model
-│   ├── dashboard.py      # Real-time anomaly detection dashboard
-│   └── ...  
-│
-├── signature/            # Signature-based detection module
-│   ├── rules/            # Detection rules
-│   ├── sniffer.py        # Packet sniffer and rule matcher
-│   └── dashboard.py      # Real-time signature logs dashboard
-│
-├── datasets/             # Dataset used for training/testing
-├── models/               # Saved ML models
-├── requirements.txt      # Dependencies
-└── README.md             # Documentation
 
 🖥️ Dashboards & Visualizations
 🔴 Signature-based Intrusion Detection Logs
@@ -53,17 +36,15 @@ Both modules run separately and provide real-time monitoring dashboards.
 ⚠️ Detected Anomalies with Probability
 <img width="704" height="471" alt="image" src="https://github.com/user-attachments/assets/482b865c-f4a8-4631-b1d5-ef8148356709" />
 
-📊 Model Performance
+📊 Model Performance:
 
 Algorithm: Random Forest Classifier
-
 Accuracy: 99.87%
-
 Dataset: [Specify dataset, e.g., NSL-KDD / CICIDS]
-
 Metrics: Precision, Recall, F1-score
 
-🚀 Installation & Usage
+🚀 Installation & Usage:
+
 1️⃣ Clone Repository
 git clone https://github.com/yourusername/Intrusion-detection-system.git
 cd intrusion-detection
@@ -73,15 +54,8 @@ pip install -r requirements.txt
 
 3️⃣ Run Signature-based IDS
 cd signature
-python sniffer.py
+python main.py
 
 4️⃣ Run Anomaly-based IDS
 cd anomaly
-python dashboard.py
-
-
-Dashboards will be available at:
-
-Signature Logs → http://localhost:5000/signature
-
-Anomaly Dashboard → http://localhost:5000/anomaly
+python detect_anomalies.py
